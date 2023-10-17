@@ -1,5 +1,6 @@
 package com.example.mad_practical9_21012011131
 
+import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+      val intent = Intent(this,SplashActivity::class.java).also { startActivity(intent) }
+
+
+
+
         val alarm : ImageView = findViewById(R.id.alarm)
         alarm.setBackgroundResource(R.drawable.alarm_animation_list)
         alarmanimation = alarm.background as AnimationDrawable
