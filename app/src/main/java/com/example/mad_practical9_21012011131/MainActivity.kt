@@ -16,10 +16,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-//        val intent = Intent(this, SplashActivity::class.java)
-//        startActivity(intent)
-
-
 
         val alarm : ImageView = findViewById(R.id.alarm)
         alarm.setBackgroundResource(R.drawable.alarm_animation_list)
